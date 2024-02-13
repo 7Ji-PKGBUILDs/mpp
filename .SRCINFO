@@ -1,0 +1,26 @@
+pkgbase = mpp
+	pkgdesc = Rockchip VPU Media Process Platform (MPP) for hardware video decode
+	pkgver = 1.0.3
+	pkgrel = 1
+	url = https://github.com/rockchip-linux/mpp
+	install = install
+	arch = x86_64
+	arch = aarch64
+	arch = arm7h
+	license = Apache
+	makedepends = cmake
+	depends = gcc-libs
+	depends = coreutils
+	depends = udev
+	provides = rockchip-mpp=1.0.3
+	conflicts = rockchip-mpp
+	options = !lto
+	options = strip
+	source = git+https://github.com/rockchip-linux/mpp.git#tag=1.0.3
+	source = 60-mpp.rules
+	source = install
+	sha256sums = SKIP
+	sha256sums = 4bc41c840642ed4d20a4e696ba623d3d1764b557ab65a69a328cd372e813c705
+	sha256sums = e41004dc18f77d37b23f84464c4367c7ccf94d8e86b6f751437b685322e153d2
+
+pkgname = mpp
